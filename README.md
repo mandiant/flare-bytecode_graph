@@ -159,7 +159,7 @@ bytecode_graph.disassemble(new_code)
 print
 ```
 
-It is also possible to create block diagrams of the bytecode using GraphViz. The block diagrams can include simple decompile comments that can assist with analysis for code objects that fail to decompile using standard tools.
+It is also possible to create control flow diagrams using GraphViz. The disassembly within the graph can include the output from a simple peephole decompiler. This can be helpful when reviewing bytecode that fails to decompile.
 
 ```python
 import bytecode_graph
