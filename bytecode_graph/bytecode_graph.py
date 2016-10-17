@@ -3,7 +3,7 @@ import struct
 import new
 import re
 
-from dis import opmap, cmp_op
+from dis import opmap, cmp_op, opname
 
 
 class Bytecode():
