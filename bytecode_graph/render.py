@@ -47,7 +47,8 @@ class Render:
             blocks.append((prev, x))
             prev = None
 
-        blocks.append((prev, x))
+        if prev is not None:
+            blocks.append((prev, x))
         return blocks
 
     def get_edges(self, blocks):
